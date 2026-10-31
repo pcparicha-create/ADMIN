@@ -1053,19 +1053,18 @@ document
 ========================================================= */
 
 document
-    .getElementById("settingsButton")
-    .addEventListener("click", () => {
+    .getElementById(
+        "settingsButton"
+    )
+    .addEventListener(
+        "click",
+        () => {
 
-        // Open settings.html in the same folder as this Admin.html file.
-        // This also preserves the GitHub Pages repository path.
-        const settingsUrl = new URL(
-            "settings.html",
-            window.location.href
-        );
+            window.location.href =
+                "settings.html";
 
-        window.location.assign(settingsUrl.href);
-
-    });
+        }
+    );
 
 
 /* =========================================================
