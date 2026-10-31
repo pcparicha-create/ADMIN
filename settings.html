@@ -521,7 +521,7 @@ async function checkLogin() {
     ) {
 
         window.location.href =
-            "admin.html";
+            "admin-login.html";
 
         return false;
 
@@ -1221,7 +1221,7 @@ document
         () => {
 
             window.location.href =
-                "admin.html";
+                "Admin.html";
 
         }
     );
@@ -1238,7 +1238,7 @@ document
             await supabaseClient.auth.signOut();
 
             window.location.href =
-                "admin.html";
+                "admin-login.html";
 
         }
     );
