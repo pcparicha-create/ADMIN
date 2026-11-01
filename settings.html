@@ -467,10 +467,20 @@ const SUPABASE_KEY =
     "sb_publishable_bMEfqkt2eZPBiNDXY8gbEA_okVZKsLU";
 
 
+const ADMIN_STORAGE_KEY = "kaka_admin_auth";
+
 const supabaseClient =
     supabase.createClient(
         SUPABASE_URL,
-        SUPABASE_KEY
+        SUPABASE_KEY,
+        {
+            auth: {
+                storageKey: ADMIN_STORAGE_KEY,
+                persistSession: true,
+                autoRefreshToken: true,
+                detectSessionInUrl: true
+            }
+        }
     );
 
 
