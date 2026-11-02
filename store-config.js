@@ -1,4 +1,4 @@
-window.STORE_NAME = "MonoPoly"; // Replace with your desired store name
+window.STORE_NAME = "IDK"; // Replace with your desired store name
 
 document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("[data-store-name]").forEach(element => {
